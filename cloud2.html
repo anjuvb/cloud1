@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film Rating Website</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 50px;
+      justify-items: center;
+    }
+    .card {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card h2 {
+      font-size: 24px;
+      margin: 20px 0;
+      color: #333;
+    }
+    .card p {
+      color: #777;
+      padding: 0 20px;
+    }
+    .stars {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      margin: 15px 0;
+    }
+    .stars .star {
+      width: 20px;
+      height: 20px;
+      color: gold;
+    }
+    .rate-button {
+      background-color: #ff6347;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease;
+    }
+    .rate-button:hover {
+      background-color: #ff4500;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>Film 1</h2>
+      <p>A heartwarming story about friendship.</p>
+      <div class="stars">
+        <span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span>
+      </div>
+      <button class="rate-button">Rate this film</button>
+    </div>
+
+    <div class="card">
+      <h2>Film 2</h2>
+      <p>An exciting action-packed adventure.</p>
+      <div class="stars">
+        <span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span>
+      </div>
+      <button class="rate-button">Rate this film</button>
+    </div>
+
+    <div class="card">
+      <h2>Film 3</h2>
+      <p>A romantic tale of love and destiny.</p>
+      <div class="stars">
+        <span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span>
+      </div>
+      <button class="rate-button">Rate this film</button>
+    </div>
+  </div>
+</body>
+</html>
